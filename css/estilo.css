@@ -208,13 +208,19 @@ textarea {
     border-radius: 5px;
     display: inline-block;
     width: auto;
-    
+    transition: all .5s;
+    cursor: pointer;
 }
 
 .button-default-stroke {
     background-color: white;
     border-color: #efefef;
     color: inherit;
+    margin: 1em 0 0;
+}
+.button-default-stroke:hover{
+    color: #7fbead;
+    border-color: #49bf9d;
 }
 
 .button-default-small {
@@ -305,6 +311,9 @@ input {
     background: #ddd;
     width: 100%;
     border-radius: 5px;
+}
+.button-default button-default-full button-default button-default-stroke{
+    background: red;
 }
 
 
