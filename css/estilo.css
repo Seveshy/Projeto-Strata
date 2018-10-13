@@ -137,7 +137,7 @@ input, label, textarea, select {
     
 }
 
-input, textarea, 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+input, textarea{
     background: #ccc;
     padding: 15px;
     border-radius: 5px;
@@ -311,9 +311,6 @@ input {
     background: #ddd;
     width: 100%;
     border-radius: 5px;
-}
-.button-default button-default-full button-default button-default-stroke{
-    background: red;
 }
 
 
