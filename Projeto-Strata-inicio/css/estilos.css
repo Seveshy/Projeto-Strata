@@ -1,0 +1,86 @@
+body {
+    background-color: #fff;
+    padding-top: 3.75rem;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #787878;
+}
+
+#sideNav .footer{
+    background-color: #3a3431
+}
+
+#sideNav .nav-ink{
+    letter-spacing: .05rem;
+    text-decoration: uppercase;
+    font-size: 1.2rem;
+    color: white;  
+}
+
+#sideNav .navbar-toggler:focus{
+    outline-color: #d48a6e;
+}
+.card{
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.card a{
+    display: block;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.card a::before{
+    background-image: url(images/overlay.png);
+    border-radius: 0.35rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0; 
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.card a::after{
+    border-radius: .35rem;
+    border: 3px solid rgba(255,255,255, .5);
+    color:white;
+    content: 'View';
+    display: inline-block;
+    font-size: .8rem;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin: -1.25em 0 0 -3em;
+    opacity: 0;
+    padding: 0 1.5em;
+    text-align: center;
+    line-height: 2.25em;
+    letter-spacing: 2px;
+}
+
+.card a:hover::before, .card a:hover::after{
+    opacity: 1;
+}
+
+.footer {
+    padding: .5rem 1rem;
+    font-size: .85rem;
+}
+
+.footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer a{
+    color: inherit;
+}
+
+.footer .icon-link{
+    font-size: 1.5rem;
+}
